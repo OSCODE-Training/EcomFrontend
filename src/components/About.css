@@ -1,0 +1,127 @@
+/* General Styling */
+.about-container {
+    padding:5rem;  
+    background-color: #e5e5e52d;
+  }
+  
+  /* Video Section */
+  .video-section {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    max-width: 50%;
+  }
+  
+  .video-thumbnail {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .about-content {
+    max-width: 50%;
+  }
+  
+  .about-content h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .about-content p {
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Cards Section */
+  .cards-section {
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: rem; */
+  }
+  
+  .card {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    width: 100%;
+    max-width: 550px; 
+    height: 250px; 
+    /* border-radius: 8px; */
+    overflow: hidden;
+    /* background-image: url('src/assets/pexels-pramodtiwari-13988977.jpg');  */
+    background-size: cover; 
+    background-position: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card .card-content {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  
+  .card:hover {
+    transform:scale(1.02);
+   
+}
+  
+  .card-img {
+    width: 100%;
+    display: block;
+  }
+
+  
+  .card-content h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-content p {
+    color: #e5e5e5;
+    margin-bottom: 1rem;
+  }
+  
+  .read-more-btn {
+    padding: 0.5rem 1rem;
+    background-color: #ffffff00;
+    color: #fff;
+    border: 1px solid ;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #0057b35d;
+  }
+  
