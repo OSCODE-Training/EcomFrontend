@@ -1,0 +1,18 @@
+#about {
+    border: 2px solid white;
+    height: 435px; 
+    margin-left: 820px;
+    margin-top:1047px;
+    position: absolute;
+}
+#about ul{
+    /* list-style: ; */
+    font-weight: bold;
+    font-size: 15px;
+    font-size: 15px;
+    padding: 10px;
+}
+#about ul li {
+ margin: 7px;
+ padding: 10px;
+}

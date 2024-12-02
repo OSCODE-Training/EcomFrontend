@@ -1,0 +1,32 @@
+#childcontent2{
+    border: 2px solid white;
+    width: 47%;
+    position: fixed;
+    margin: 200px 10px 10px 79px;
+    height: 550px;
+}
+#childcontent2 .image1 img{
+     border: 2px solid white;
+     margin: 0px 0px 0px 2px;
+     height: 450px;
+     width: 100%;
+     cursor: pointer;
+}
+/* function main(props){
+
+    let song = document.getElementById(props)
+     // alert(props)
+     // song.setAttribute('autoplay','true');
+     song.play() 
+ 
+ }
+ function hero(props){
+     let song = document.getElementById(props)
+     // alert('play song')
+     // song.setAttribute('autoplay','true');
+     song.pause() 
+ 
+ }
+ function navigate(props){
+     window.location.href=props
+  */

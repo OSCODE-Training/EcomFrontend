@@ -1,0 +1,25 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#childcontent3{
+    border: 2px solid white;
+   justify-items: end;
+   position: absolute;
+    /* margin: 16px 0px 0px 7px; */
+    /* width: 50%; */
+    margin-left: 820px;
+    margin-top: 160px;
+}
+#childcontent3  .head1{
+    font-size: 30px;
+    padding: 10px;
+}
+#childcontent3  .Customer a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+
+    

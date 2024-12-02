@@ -1,0 +1,34 @@
+#mainbuy{
+    border: 2px solid white;
+    /* justify-items: end; */
+    margin-left: 820px;
+    margin-top:387px;
+    position: absolute; 
+}
+#mainbuy .limited{
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    /* justify-items: center; */
+    background-color: rgb(28, 28, 133);
+    color: white;
+
+}
+#mainbuy .price{
+    font-size: 30px;
+    font-weight: bold;
+}
+#mainbuy .MRP{
+    text-decoration: line-through;
+}
+#mainbuy .trust img{
+    height: 12px;
+}
+#mainbuy .trust button{
+    border: 2px solid blue;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+

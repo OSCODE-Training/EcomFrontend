@@ -1,0 +1,27 @@
+#image2{
+    border: 2px solid white;
+    /* justify-items: end; */
+    margin-left: 820px;
+    margin-top:300px;
+    position: absolute;
+}
+#image2 ul{
+    list-style: none;
+    display: flex;
+    
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+#image2 ul li{
+    margin: 10px;
+}
+
+
+#image2 ul img{
+    border: 2px solid white;
+    height: 20px;
+    width: 20px;
+
+}
+

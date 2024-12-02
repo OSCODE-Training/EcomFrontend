@@ -1,0 +1,26 @@
+#model1{
+    border: 2px solid white; 
+    /* justify-items: end; */
+    margin-left: 820px;
+    margin-top:658px;
+    position: absolute;
+}
+#model1 ul{
+    list-style: none;
+    display: flex;
+    height: 40px;
+}
+#model1 ul li{
+    border: 2px solid #2b7dd4;
+    border-radius: 15px;
+    text-align: center;
+    height: 25px;
+    width: 100px;
+    margin: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px;
+    background-color: #2b7dd4;
+    cursor: pointer;
+
+}
