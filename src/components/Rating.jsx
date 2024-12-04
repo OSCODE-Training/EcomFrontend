@@ -9,12 +9,12 @@ const Rating = () => {
     const handleRating = (index) => {
       setRating(index + 1);
     }
-
+}
   return (
     <>
     <div id='image2'>
     <ul>
-      <svg  key={index}
+      {/* <svg  key={index}
           onClick={() => handleRating(index)}
           onMouseEnter={() => handleRating(index)}
           width="40"
@@ -22,7 +22,7 @@ const Rating = () => {
           viewBox="0 0 24 24"
           fill={index < rating ? getColor(rating) : 'yellow'} 
           xmlns=""
-        >
+        ><svg/> */}
 
        <li className='star'></li>
         {/* <img src="./src/assets/star.svg" alt="" /><img src="./src/assets/star.svg" alt="" /><img src="./src/assets/star.svg" alt="" /><img src="./src/assets/star.svg" alt="" /><img src="./src/assets/star.svg" alt="" /> */}

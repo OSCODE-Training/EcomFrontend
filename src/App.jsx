@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Navbar from "./components/navbar";
+import Navbar from "../EcomFrontend/src/components/Navbar"
 import Menupage from "./components/Menubar";
 import Sidebar from "./components/sidebar";
 import Imagebar from "./components/imagebar";
@@ -11,7 +11,7 @@ import Model1 from "./components/Model1";
 import Iteminfo from "./components/Iteminfo";
 import Aboutitem from "./components/Aboutitem";
 import Comment from "./components/comment";
-import Addcart from "./components/Addcart";
+import Footer from "../EcomFrontend/src/components/Footer"
 import Model2 from "./components/Model2";
 // import Footer from "./components/Footer"
 // import "./App.css"
@@ -43,10 +43,7 @@ function App() {
       <Iteminfo/>
       <Aboutitem/>
       <Comment/>
-      
-      <Addcart/>
-      {/* <Footer/> */}
-      
+      <Footer/>
 
       
 
