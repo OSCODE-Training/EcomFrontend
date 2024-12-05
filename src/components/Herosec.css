@@ -3,7 +3,6 @@
   display: flex;
   background: linear-gradient(to bottom, #030026, #001f5eec);
   height: 70vh;
-  max-width: fit-content;
 }
 .hero-section {
    /* Blue gradient from darker to lighter */
@@ -50,5 +49,5 @@
   }
   #heroimg{
     height: 100%;
-
+    width: 100%;
   }

@@ -8,12 +8,14 @@ import Accessories from './pages/Accessories';
 import Contactus from "./pages/Contactus"
 import Footer from './components/Footer';
 import ScrollUpBtn from './components/ScrollUpBtn';
+import Login from './pages/Login';
 const App = () => {
   return (
     <Router>
       <Navbar/>
       <ScrollUpBtn />
       <Routes>
+        <Route path="/login" element={<Login/>} />
         <Route path='/' element={<Landingpage />}/>
         <Route path='/education' element={<Education />}/>
         <Route path='/business' element={<Business />}/>

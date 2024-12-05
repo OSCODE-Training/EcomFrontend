@@ -7,7 +7,6 @@ const Navbar = () => {
   const [isBusinessMenuOpen, setBusinessMenuOpen] = useState(false);
   const [isAccessoriesMenuOpen, setAccessoriesMenuOpen] = useState(false);
 
-  // Toggle dropdown visibility
   const handleEducationMouseEnter = () => setEducationMenuOpen(true);
   const handleEducationMouseLeave = () => setEducationMenuOpen(false);
 
@@ -15,7 +14,7 @@ const Navbar = () => {
   const handleBusinessMouseLeave = () => setBusinessMenuOpen(false);
 
   const handleAccessoriesMenuEnter = () => setAccessoriesMenuOpen(true);
-  const handleAccessoriesMenuLeave = () => setAccessoriesMenuOpen(false); // Corrected "flase" to "false"
+  const handleAccessoriesMenuLeave = () => setAccessoriesMenuOpen(false);
 
   return (
     <nav className="navbar">
@@ -35,7 +34,6 @@ const Navbar = () => {
             </Link>
           </li>
 
-          {/* Education Dropdown */}
           <li
             className="dropdown"
             onMouseEnter={handleEducationMouseEnter}
@@ -56,7 +54,6 @@ const Navbar = () => {
             )}
           </li>
 
-          {/* Business Dropdown */}
           <li
             className="dropdown"
             onMouseEnter={handleBusinessMouseEnter}
@@ -77,7 +74,6 @@ const Navbar = () => {
             )}
           </li>
 
-          {/* Accessories Dropdown */}
           <li
             className="dropdown"
             onMouseEnter={handleAccessoriesMenuEnter}
@@ -98,11 +94,17 @@ const Navbar = () => {
             )}
           </li>
 
-          {/* Contact Us */}
           <li>
             <Link to="/contactus">Contact Us</Link>
           </li>
         </ul>
+
+        {/* Login Button */}
+        <div className="login-button-container">
+          <Link to="/login" className="login-button">
+            Login
+          </Link>
+        </div>
       </div>
     </nav>
   );
