@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="logo">
           <Link to="/">
-            <img src="/logo.png" alt="Logo" className="logo-img" />
+            <img src="src/assets/Screenshot 2024-12-08 081538.png" alt="Logo" className="logo-img" />
           </Link>
         </div>
 
@@ -45,10 +45,19 @@ const Navbar = () => {
             {isEducationMenuOpen && (
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/education/flat-panel">Flat Panel</Link>
+                  <Link to="/">Interactive Flat Panel</Link>
                 </li>
                 <li>
-                  <Link to="/education/video-wall">Video Wall</Link>
+                  <Link to="/">LED Video Wall</Link>
+                </li>
+                <li>
+                  <Link to="/">PTZ Camera</Link>
+                </li>
+                <li>
+                  <Link to="/">Digital Signages</Link>
+                </li>
+                <li>
+                  <Link to="/">Digital Podium</Link>
                 </li>
               </ul>
             )}
@@ -65,10 +74,28 @@ const Navbar = () => {
             {isBusinessMenuOpen && (
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/business/video-conferencing">Video Conferencing</Link>
+                  <Link to="/">Interactive Flat Panel</Link>
                 </li>
                 <li>
-                  <Link to="/business/audio-conferencing">Audio Conferencing</Link>
+                  <Link to="/">Wireless Presentation Device</Link>
+                </li>
+                <li>
+                  <Link to="/">LED Video Wall</Link>
+                </li>
+                <li>
+                  <Link to="/">Digital Signages</Link>
+                </li>
+                <li>
+                  <Link to="/">PTZ Camera</Link>
+                </li> 
+                <li>
+                  <Link to="/">Video Conferencing System</Link>
+                </li>
+                <li>
+                  <Link to="/">Audio Conferencing System</Link>
+                </li>
+                <li>
+                  <Link to="/">Digital Podium</Link>
                 </li>
               </ul>
             )}
@@ -85,10 +112,19 @@ const Navbar = () => {
             {isAccessoriesMenuOpen && (
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/accessories/video-conferencing">Video Conferencing</Link>
+                  <Link to="/">OPS PC Module</Link>
                 </li>
                 <li>
-                  <Link to="/accessories/audio-conferencing">Audio Conferencing</Link>
+                  <Link to="/">Document Camera</Link>
+                </li>
+                <li>
+                  <Link to="/">Stands & Mounts</Link>
+                </li>
+                <li>
+                  <Link to="/">Tripod</Link>
+                </li>
+                <li>
+                  <Link to="/">Software</Link>
                 </li>
               </ul>
             )}

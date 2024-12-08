@@ -2,14 +2,14 @@ import './Products.css'
 const Products = () => {
   // Example product data
   const products = [
-    { id: 1, image:  "src/assets/pexels-jibarofoto-14526286.jpg", text: "Interactive Panels" },
-    { id: 2, image:  "src/assets/pexels-jibarofoto-14526286.jpg", text: "Video Walls" },
-    { id: 3, image:  "src/assets/pexels-jibarofoto-14526286.jpg", text: "Digital Signage" },
-    { id: 4, image: "src/assets/pexels-jibarofoto-14526286.jpg", text: "PTZ Cameras" },
-    { id: 5, image:  "src/assets/pexels-jibarofoto-14526286.jpg", text: "Interactive Displays" },
-    { id: 6, image:  "src/assets/pexels-jibarofoto-14526286.jpg", text: "Smart Podiums" },
-    { id: 7, image:  "src/assets/pexels-jibarofoto-14526286.jpg", text: "Document Cameras" },
-    { id: 8, image:  "src/assets/pexels-jibarofoto-14526286.jpg", text: "Software Solutions" },
+    { id: 1, image:  "src/assets/flatpanel.png", text: "Interactive Panels" },
+    { id: 2, image:  "src/assets/vidwall.png", text: "Video Walls" },
+    { id: 3, image: "src/assets/camera.png", text: "PTZ Cameras" },
+    { id: 4, image:  "src/assets/podium.png", text: "Digital Podium" },
+    { id: 5, image:  "src/assets/singages.png", text: "Digital Singages" },
+    { id: 6, image:  "src/assets/audio.png", text: "Audio Conferencing System" },
+    { id: 7, image:  "src/assets/presentation.png", text: "Wireless Presentation Device " },
+    { id: 8, image:  "src/assets/doccam.png", text: "Document Camera" },
   ];
 
   return (

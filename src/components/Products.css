@@ -48,13 +48,13 @@
 /* Image styling */
 .product-image {
   width: 100%;
-  height: 80%;
+  height: 70%;
   object-fit: initial;
   transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
 }
 
 .product-card:hover .product-image {
-  transform: scale(1.1); /* Zoom in slightly on hover */
+  transform: scale(1.05); /* Zoom in slightly on hover */
 }
 
 /* Text styling */
