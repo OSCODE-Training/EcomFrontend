@@ -1,0 +1,87 @@
+#navbar2{
+    border: 2px solid blue;
+    height: 80px;
+    /* justify-items:center ; */
+    background-color: blue;
+    color: white;
+    position: sticky;
+    
+}
+#navbar2 ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 20px;
+}
+
+#navbar2 ul .logoc img{
+    border: 2px solid blue;
+    height: 50px;
+    width: 100px;
+}
+#navbar2 ul img{
+    border: 2px solid blue;
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+}
+#navbar2 ul .check1{
+    font-size: 15px;
+    font-weight: bold;
+}
+#part1{
+    border: 2px solid greenyellow;
+    width: 600px;
+    height: 70px;
+    margin: -345px 0px 0px 130px;
+    background-color: rgb(77, 77, 158);
+}
+#part1 ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+#part1 ul button{
+    height: 35px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#part1 input.pincode1 {
+     width: 250px;
+     height: 30px;
+     padding: 4px;
+     margin: 10px;
+     font-size: 15px;
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+#part1 button.pincheck1{
+    border: 2px solid white;
+    background-color: white;
+    color: blue;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
+#part1 button.pincheck1:hover{
+    text-decoration: underline;
+    color: red;
+    
+}
+
+
+.shopping{
+    border: 2px solid yellow;
+    height: 600px;
+    width: 970px;
+    margin: 24px 0px 0px 35px;
+}
+
+

@@ -1,0 +1,99 @@
+/* Navbar Container */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.723);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.107);
+  height: 14vh;
+}
+
+/* Navbar Flexbox Layout */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; 
+}
+
+/* Logo Section */
+.logo {
+  flex-shrink: 0;
+}
+
+.logo-img {
+  height: 50px;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+  }
+
+.navbar-menu li {
+  position: relative;
+}
+
+/* Navbar Links */
+.navbar-menu a {
+  text-decoration: none;
+  color:  #2c3e50;
+  display: flex;
+  font-size: larger;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.navbar-menu a:hover {
+  background-color: #b8b8b826;
+  
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Aligns the menu just below the navbar */
+  left: 0; /* Aligns with the start of the dropdown */
+  background-color: rgba(255, 255, 255, 0.47);
+  list-style-type: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Optional: subtle border to separate */
+  z-index: 999; /* Ensure it is above other elements */
+  padding: 1rem 0; /* Space within the dropdown */
+  width: 200px; /* Optional: Limit dropdown width */
+  flex-direction: column; /* Ensure the menu items are displayed in a column */
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Dropdown Menu Links */
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #2c3e50;;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(121, 121, 121, 0.071);
+}
+
+/* Show the Dropdown Menu when Hovered */
+.dropdown:hover .dropdown-menu {
+  display: flex; /* Show dropdown menu */
+  flex-direction: column; /* Ensure items stack in a column */
+}

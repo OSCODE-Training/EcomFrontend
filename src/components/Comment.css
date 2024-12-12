@@ -2,7 +2,8 @@
     border: 2px solid white;
     height: 130px;
     margin-left: 820px;
-    margin-top: 1485px;
+    margin-top: 1445px;
+    display: inline-block;
 }
 #inputcustomer input{
     height: 40px;

@@ -12,9 +12,9 @@ const Model1 = () => {
     if (props1=="R3579") { 
       setInFirstli((prevState) => !prevState);
       // setInFourtli("R3579")
-      setInSecondli((prevState) => prevState);
-      setInThirdli((prevState) => prevState);
-      setInFourthli((prevState) => prevState);
+      // setInSecondli((prevState) => prevState);
+      // setInThirdli((prevState) => prevState);
+      // setInFourthli((prevState) => prevState);
       
     }     
     if (props1 =="C450") {
@@ -35,7 +35,7 @@ const Model1 = () => {
   return (
     <>
      <div id='model1'>
-                <h2>Model Name:{!isInFirstli && <h3>{isInFourtli}</h3> }{!isInSecondli && <h3>C450</h3>}{!isInThirdli && <h3>C435</h3>}{!isInFourthli && <h3>H568</h3>}</h2>
+                <h2>Model Name:{!isInFirstli && <h3>R3579</h3> }{!isInSecondli && <h3>C450</h3>}{!isInThirdli && <h3>C435</h3>}{!isInFourthli && <h3>H568</h3>}</h2>
                 <ul>
                     <li onClick={()=> moveModelno("R3579")}>{isInFirstli && <h3>R3579</h3>}</li>
                     <li onClick={()=> moveModelno("C450")}>{isInSecondli && <h3>C450</h3>}</li>

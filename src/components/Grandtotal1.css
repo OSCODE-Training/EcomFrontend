@@ -1,0 +1,38 @@
+#order{
+    border: 2px solid red;
+    width: 350px;
+    height: 280px;
+   margin: 40px 0px 0px 1015px;
+   padding: 10px;
+    
+}
+#order .head2{
+    font-size: 20px;
+} 
+#order .item1{
+     border: 2px solid white;
+     margin: 5px;
+    }
+#order .item1 ul{
+     list-style: none;
+     display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px;
+}
+#order button{
+    width: 300px;
+    height: 35px;
+    margin: 3px 0px 0px 22px;
+    font-size: 18px;
+}
+#order .item1 ul li img{
+    height: 15px;
+}
+
+
+
+
+
+

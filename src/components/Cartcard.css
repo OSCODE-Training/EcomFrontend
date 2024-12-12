@@ -1,0 +1,75 @@
+#card{
+    border: 2px solid red;
+    height: 175px;
+    width: 950px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between; 
+}
+#card .image4 img{
+    height: 155px;
+    width: 250px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#card .info2 ul{
+    list-style: none;
+    margin: 3px;
+    cursor: pointer;
+}
+#card .info2 .innerli ul{
+    display: flex ;
+}
+
+#card .info2 ul .btn4 li{
+    display: flex;
+    padding: 10px;
+    
+}
+#card .info2 ul .btn4 li button{
+    border: 2px solid white;
+    background-color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    height: 10px;
+}
+
+#card .info2 ul .delete li{
+    width: 100px;
+    height: 15px;
+    font-size: 15px;
+}
+#card .info2 ul .delete li button{
+    border: 2px solid white;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+#card .info2 ul .delete li button:hover{
+    text-decoration: underline red;
+    color: red;
+}
+
+
+
+
+
+
+
+
+#card .info2 ul li a{
+    text-decoration: none;
+    height: 30px;
+    width: 200px;
+}
+
+
+#card .pricecart{
+    display: flex;
+    margin: 10px;
+}
+
+#card .pricecart img{
+    height: 15px;
+}

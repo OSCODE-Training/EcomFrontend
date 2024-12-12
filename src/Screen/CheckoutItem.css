@@ -1,0 +1,37 @@
+#navbar{
+    border: 2px solid blue;
+    height: 100px;
+    /* justify-items:center ; */
+    background-color: blue;
+    color: white;
+    
+}
+#navbar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 20px;
+}
+
+#navbar ul .logoc img{
+    border: 2px solid blue;
+    height: 50px;
+    width: 100px;
+}
+#navbar ul img{
+    border: 2px solid blue;
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+}
+#navbar .check1{
+    font-size: 35px;
+    margin: 31px 10px 10px 10px;
+    text-shadow: 0px 0px 9px ;
+}
+
+
+
+
+
+    

@@ -1,0 +1,55 @@
+#delivery{
+    border: 2px solid blue;
+    height: 128px;
+    width: 930px;
+    margin: 10px 1px 10px 50px;
+    display: flex;
+    justify-content: space-around;
+}
+#delivery .del ul{
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+#delivery .address ul{
+    list-style: none;
+    font-size: 20px;
+}
+#delivery .Edit ul{
+    display: flex;
+    list-style: none;
+}
+#delivery .Edit ul button{
+       height: 30px;
+       width: 250px;
+       margin: 10px;
+       background-color: blue;
+       color: white;
+       font-size: 15px;
+       font-weight: bold;
+       /* padding: 10px; */
+}
+#delivery .Edit ul button.Edit1{
+    width: 350px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#delivery .Edit .dell1{
+    height: 18px;
+    width: 350px;
+    font-size: 12px;
+    box-shadow: 0px 0px 2px 1px black;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+
+    
+
+
+
+
