@@ -18,7 +18,7 @@ const [isChecked, setisChecked] = useState(false)
     <div id="payment">
         <h2>Select Payment Option</h2>
          <div className="pay1">
-          <div className='inp'> <div ><label><input type="checkbox" onClick={handleCheckboxChange} checked={isChecked} onChange={handleCheckboxChange}/>  Credit or Debit CARD </label>
+          <div className='inp'> <div ><label><input type="radio" name='payment' onClick={handleCheckboxChange} checked={isChecked} onChange={handleCheckboxChange}/>  Credit or Debit CARD </label>
           {isChecked && (
             <div style={popupStyles.overlay}>
               <div style={popupStyles.popup}>
@@ -38,8 +38,8 @@ const [isChecked, setisChecked] = useState(false)
             <li><img src="./src/assets/Maestrologo.png" alt="" /></li>
            </ul>
            </div><br />
-          <div className='inp'> <input type="checkbox" />  Net Banking </div><br />
-          <div className='inp'><input type="checkbox" name="" id="" /> UPI
+          <div className='inp'> <input type="radio" name='payment' />  Net Banking </div><br />
+          <div className='inp'><input type="radio" name='payment' id="" /> UPI
                 <ul>
                     <li><img src="./src/assets/G-paylogo.avif" alt="" /></li>
                     <li><img src="./src/assets/Phonepelogo.webp" alt="" /></li>
@@ -47,9 +47,9 @@ const [isChecked, setisChecked] = useState(false)
                     {/* <li><img src="" alt="" /></li> */}
                 </ul>
                 </div><br />
-             <div className='inp'><input type="checkbox" name="" id="" /> EMI options
+             <div className='inp'><input type="radio" name='payment' id="" /> EMI options
              </div><br />
-            <div className='inp'><input type="checkbox" name="" id="" /> Cash on Delivery
+            <div className='inp'><input type="radio" name='payment' id="" /> Cash on Delivery
             </div><br /><br />
             <hr />
              <button>Use This Payment Method</button>

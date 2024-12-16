@@ -1,6 +1,14 @@
 import React from 'react'
 import "./Grandtotal1.css"
+import { useNavigate } from "react-router-dom";
+
 const Grandtotal1 = () => {
+    const navigate = useNavigate();
+
+    const handleBuyNowClick = () => {
+      navigate("/checkout");
+    };
+
   return (
     <>
     <div id='order'>
@@ -24,7 +32,7 @@ const Grandtotal1 = () => {
          </ul>
         </div> <br />
 
-        <button>Buy Now</button>
+        <button onClick={handleBuyNowClick}>Buy Now</button>
 
 
    </div>

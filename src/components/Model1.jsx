@@ -6,22 +6,16 @@ const Model1 = () => {
   const [isInSecondli, setInSecondli] = useState(true);
   const [isInThirdli, setInThirdli] = useState(true);
   const [isInFourthli, setInFourthli] = useState(true);
-  const [isInFourtli, setInFourtli] = useState("");
+  const [isInFourtli, setInFourtli] = useState(true);
   const moveModelno = (props1) => {
 
     if (props1=="R3579") { 
       setInFirstli((prevState) => !prevState);
-      // setInFourtli("R3579")
-      // setInSecondli((prevState) => prevState);
-      // setInThirdli((prevState) => prevState);
-      // setInFourthli((prevState) => prevState);
       
     }     
+      
     if (props1 =="C450") {
       setInSecondli((prevState) => !prevState);
-      // setInFourtli("C450")
-      setInThirdli((prevState) => prevState);
-      setInFourthli((prevState) => prevState);
     }
     if (props1 =="C435") {
       setInThirdli((prevState) => !prevState);
@@ -31,6 +25,9 @@ const Model1 = () => {
       setInFourthli((prevState) => !prevState);
     }
   }
+  const onclickback=()=>{
+    setInFirstli=true
+  }
 
   return (
     <>
@@ -38,7 +35,7 @@ const Model1 = () => {
                 <h2>Model Name:{!isInFirstli && <h3>R3579</h3> }{!isInSecondli && <h3>C450</h3>}{!isInThirdli && <h3>C435</h3>}{!isInFourthli && <h3>H568</h3>}</h2>
                 <ul>
                     <li onClick={()=> moveModelno("R3579")}>{isInFirstli && <h3>R3579</h3>}</li>
-                    <li onClick={()=> moveModelno("C450")}>{isInSecondli && <h3>C450</h3>}</li>
+                    <li onClick={()=> moveModelno("C450")&& onclickback}>{isInSecondli && <h3>R3579</h3>}</li>
                     <li onClick={()=> moveModelno("C435")}>{isInThirdli && <h3>C435</h3>}</li>
                     <li onClick={()=> moveModelno("H568")}>{isInFourthli && <h3>H568</h3>}</li> 
                 </ul>

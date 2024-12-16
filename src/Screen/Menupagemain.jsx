@@ -18,19 +18,25 @@ import Addcart from "../components/Addcart.jsx";
 
 
 const Menupagemain = () => {
-    const [showImageInSidebar, setShowImageInSidebar] = useState(true);
+  const [activeImage, setActiveImage] = useState(null);
 
-  const handleMoveImage = (props2) => {
-    if (props2 ) {
-      
-    }
-    setShowImageInSidebar((prev) => !prev);
+  // Images data (can be URLs or local paths)
+  const images = [
+    <img src="" alt="productImage" />,
+    <img src="" alt="productImage" />,
+    <img src="" alt="productImage" />,
+    <img src="" alt="productImage" />,
+    <img src="" alt="productImage" />,
+  ];
+  const handleImageClick = (image) => {
+    setActiveImage(activeImage === image ? null : image);
   };
   return (
     <>
      <Navbar/>
       <Menubar/>
-      <Sidebar moveImage={handleMoveImage} showImage={showImageInSidebar}/>
+      <Sidebar  images={images} activeImage={activeImage}
+        onImageClick={handleImageClick}/>
       <Imagebar showImage={!showImageInSidebar}/>
       <Productintro/>
       <Rating/>
