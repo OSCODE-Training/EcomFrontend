@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import Navbar from '../components/Navbar.jsx';
 import Menubar from '../components/Menubar.jsx';
-import Sidebar from "../components/sidebar.jsx";
-import Imagebar from "../components/imagebar.jsx";
+import Sidebar from '../components/Sidebar.jsx';
+import Imagebar from '../components/Imagebar.jsx';
 import Productintro from "../components/Productintro.jsx";
 import Rating from "../components/rating.jsx";
 import Price from "../components/price.jsx";
@@ -18,25 +18,19 @@ import Addcart from "../components/Addcart.jsx";
 
 
 const Menupagemain = () => {
-  const [activeImage, setActiveImage] = useState(null);
+    const [showImageInSidebar, setShowImageInSidebar] = useState(true);
 
-  // Images data (can be URLs or local paths)
-  const images = [
-    <img src="" alt="productImage" />,
-    <img src="" alt="productImage" />,
-    <img src="" alt="productImage" />,
-    <img src="" alt="productImage" />,
-    <img src="" alt="productImage" />,
-  ];
-  const handleImageClick = (image) => {
-    setActiveImage(activeImage === image ? null : image);
+  const handleMoveImage = (props2) => {
+    if (props2 ) {
+      
+    }
+    setShowImageInSidebar((prev) => !prev);
   };
   return (
     <>
      <Navbar/>
       <Menubar/>
-      <Sidebar  images={images} activeImage={activeImage}
-        onImageClick={handleImageClick}/>
+      <Sidebar moveImage={handleMoveImage} showImage={showImageInSidebar}/>
       <Imagebar showImage={!showImageInSidebar}/>
       <Productintro/>
       <Rating/>
