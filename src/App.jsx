@@ -7,9 +7,7 @@ import CheckoutItem from "./Screen/CheckoutItem";
 import Menupagemain from "./Screen/Menupagemain";
 import Landingpage from './Screen/Landingpage'
 import Navbar from "./components/Navbar";
-import Education from './Screen/Education'
-import Business from './Screen/Business';
-import Accessories from './Screen/Accessories';
+
 import Contactus from "./Screen/Contactus"
 import Footer from './components/Footer';
 import ScrollUpBtn from './components/ScrollUpBtn';
