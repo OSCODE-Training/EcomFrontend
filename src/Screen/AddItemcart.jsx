@@ -17,12 +17,10 @@ const AddItemcart = () => {
   
   return (
     <>
-    <Navbar/>
     <div id="navbar2">
     <ul>
-        <li className='logoc'><img src="./src/assets/evota logo.jpg" alt="" /></li>
+
         <li className='check1'>Cart ------ Address ------ Checkout</li>
-        <li><img src="./src/assets/securelogo.jpg" alt="" /></li>
        </ul>
     </div><br />
     <Grandtotal1/>
@@ -45,7 +43,6 @@ const AddItemcart = () => {
     <div className="shopping">
     <Cartcard/>
     </div>
-    <Footer/>
     </>
   );
 };

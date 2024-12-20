@@ -7,7 +7,6 @@ const Navbar = () => {
   const [isBusinessMenuOpen, setBusinessMenuOpen] = useState(false);
   const [isAccessoriesMenuOpen, setAccessoriesMenuOpen] = useState(false);
 
-  // Toggle dropdown visibility
   const handleEducationMouseEnter = () => setEducationMenuOpen(true);
   const handleEducationMouseLeave = () => setEducationMenuOpen(false);
 
@@ -15,7 +14,7 @@ const Navbar = () => {
   const handleBusinessMouseLeave = () => setBusinessMenuOpen(false);
 
   const handleAccessoriesMenuEnter = () => setAccessoriesMenuOpen(true);
-  const handleAccessoriesMenuLeave = () => setAccessoriesMenuOpen(false); // Corrected "flase" to "false"
+  const handleAccessoriesMenuLeave = () => setAccessoriesMenuOpen(false);
 
   return (
     <nav className="navbar">
@@ -23,7 +22,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="logo">
           <Link to="/">
-            <img src="/logo.png" alt="Logo" className="logo-img" />
+            <img src="src/assets/Screenshot 2024-12-08 081538.png" alt="Logo" className="logo-img" />
           </Link>
         </div>
 
@@ -35,74 +34,113 @@ const Navbar = () => {
             </Link>
           </li>
 
-          {/* Education Dropdown */}
           <li
             className="dropdown"
             onMouseEnter={handleEducationMouseEnter}
             onMouseLeave={handleEducationMouseLeave}
           >
-            <Link to="/education" className="dropdown-toggle">
+            <Link to="/" className="dropdown-toggle">
               Education
             </Link>
             {isEducationMenuOpen && (
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/education/flat-panel">Flat Panel</Link>
+                  <Link to="/education/interactive-flat-panel">Interactive Flat Panel</Link>
                 </li>
                 <li>
-                  <Link to="/education/video-wall">Video Wall</Link>
+                  <Link to="/education/led-video-wall">LED Video Wall</Link>
+                </li>
+                <li>
+                  <Link to="/education/ptz-camera">PTZ Camera</Link>
+                </li>
+                <li>
+                  <Link to="/education/digital-signages">Digital Signages</Link>
+                </li>
+                <li>
+                  <Link to="/education/digital-podium">Digital Podium</Link>
                 </li>
               </ul>
             )}
           </li>
 
-          {/* Business Dropdown */}
           <li
             className="dropdown"
             onMouseEnter={handleBusinessMouseEnter}
             onMouseLeave={handleBusinessMouseLeave}
           >
-            <Link to="/business" className="dropdown-toggle">
+            <Link to="/" className="dropdown-toggle">
               Business
             </Link>
             {isBusinessMenuOpen && (
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/business/video-conferencing">Video Conferencing</Link>
+                  <Link to="/business/interactive-flat-panel">Interactive Flat Panel</Link>
                 </li>
                 <li>
-                  <Link to="/business/audio-conferencing">Audio Conferencing</Link>
+                  <Link to="/business/wireless-presentation-device">Wireless Presentation Device</Link>
+                </li>
+                <li>
+                  <Link to="/business/led-video-wall">LED Video Wall</Link>
+                </li>
+                <li>
+                  <Link to="/business/digital-signages">Digital Signages</Link>
+                </li>
+                <li>
+                  <Link to="/business/ptz-camera">PTZ Camera</Link>
+                </li>
+                <li>
+                  <Link to="/business/video-conferencing-system">Video Conferencing System</Link>
+                </li>
+                <li>
+                  <Link to="/business/audio-conferencing-system">Audio Conferencing System</Link>
+                </li>
+                <li>
+                  <Link to="/business/digital-podium">Digital Podium</Link>
                 </li>
               </ul>
             )}
           </li>
 
-          {/* Accessories Dropdown */}
           <li
             className="dropdown"
             onMouseEnter={handleAccessoriesMenuEnter}
             onMouseLeave={handleAccessoriesMenuLeave}
           >
-            <Link to="/accessories" className="dropdown-toggle">
+            <Link to="/" className="dropdown-toggle">
               Accessories
             </Link>
             {isAccessoriesMenuOpen && (
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/accessories/video-conferencing">Video Conferencing</Link>
+                  <Link to="/accessories/ops-pc-module">OPS PC Module</Link>
                 </li>
                 <li>
-                  <Link to="/accessories/audio-conferencing">Audio Conferencing</Link>
+                  <Link to="/accessories/document-camera">Document Camera</Link>
+                </li>
+                <li>
+                  <Link to="/accessories/stands-mounts">Stands & Mounts</Link>
+                </li>
+                <li>
+                  <Link to="/accessories/tripod">Tripod</Link>
+                </li>
+                <li>
+                  <Link to="/accessories/software">Software</Link>
                 </li>
               </ul>
             )}
           </li>
 
-          {/* Contact Us */}
           <li>
             <Link to="/contactus">Contact Us</Link>
           </li>
         </ul>
+
+        {/* Login Button */}
+        <div className="login-button-container">
+          <Link to="/login" className="login-button">
+            Login
+          </Link>
+        </div>
       </div>
     </nav>
   );

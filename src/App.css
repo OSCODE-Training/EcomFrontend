@@ -1,7 +1,8 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+*{  zoom: 1.01;
+    padding: 0%;
+    margin: 0%;
+    font-family:sans-serif;
+    
 }
 #container3{
     border: 2px solid black;

@@ -1,0 +1,73 @@
+/* Container styling */
+.products-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.products-heading {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.underline {
+  background-color: #00c1d4;
+  height: 5px;
+  width: 70px;
+  margin: 10px auto;
+}
+
+/* Grid styling */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Product card styling */
+.product-card {
+  margin: 40px 0px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+  width: 270px;
+  height: 250px;
+  text-align: center;
+}
+
+/* Hover effect on product cards */
+.product-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a deeper shadow for hover */
+}
+
+/* Image styling */
+.product-image {
+  width: 100%;
+  height: 70%;
+  object-fit: initial;
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05); /* Zoom in slightly on hover */
+}
+
+/* Text styling */
+.product-text {
+  display: block;
+  padding: 10px;
+  font-size: 1rem;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.product-text:hover {
+  color: #0056b3;
+}

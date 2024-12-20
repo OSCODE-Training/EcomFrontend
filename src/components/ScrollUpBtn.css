@@ -1,0 +1,50 @@
+/* Scroll-up button styles */
+.scroll-up-btn {
+  position: fixed; /* Ensure it's fixed to the screen */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Make it circular */
+  border: none;
+  background-color: #00c1d4; /* Button background color */
+  color: #fff; /* Icon color */
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for visibility */
+  opacity: 0.8; /* Slightly transparent */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.scroll-up-btn:hover {
+  opacity: 1; /* Fully visible on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.scroll-up-btn.hidden {
+  display: none; /* Hide the button when not needed */
+}
+  
+  .scroll-up-btn:active {
+    transform: scale(1);
+  }
+  
+  .scroll-up-btn:focus {
+    outline: none;
+  }
+  
+  /* Animation for fading in the button */
+  .scroll-up-btn {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .scroll-up-btn.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  

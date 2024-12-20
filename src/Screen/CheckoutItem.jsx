@@ -7,13 +7,13 @@ import Paymentoption from '../components/Paymentoption.jsx'
 const CheckoutItem = () => {
   return (
     <>
-    <div id="navbar">
+    {/* <div id="navbar">
        <ul>
         <li className='logoc'><img src="./src/assets/evota logo.jpg" alt="" /></li>
         <li className='check1'>CHECKOUT</li>
         <li><img src="./src/assets/securelogo.jpg" alt="" /></li>
        </ul>
-    </div>
+    </div> */}
     <Checkout/>
     <Grandtotal/>
     <Paymentoption/>

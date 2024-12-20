@@ -1,12 +1,12 @@
 /* Navbar Container */
-.navbar {
+.navbar { 
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.723);
+  background-color: rgb(255, 255, 255);
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.107);
-  height: 14vh;
+  height: 5vh;
 }
 
 /* Navbar Flexbox Layout */
@@ -23,7 +23,7 @@
 }
 
 .logo-img {
-  height: 50px;
+  height: 40px;
 }
 
 /* Navbar Menu */
@@ -62,7 +62,7 @@
   position: absolute;
   top: 100%; /* Aligns the menu just below the navbar */
   left: 0; /* Aligns with the start of the dropdown */
-  background-color: rgba(255, 255, 255, 0.47);
+  background-color: rgba(255, 255, 255, 0.92);
   list-style-type: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-top: 1px solid rgba(0, 0, 0, 0.1); /* Optional: subtle border to separate */
@@ -96,4 +96,20 @@
 .dropdown:hover .dropdown-menu {
   display: flex; /* Show dropdown menu */
   flex-direction: column; /* Ensure items stack in a column */
+}
+
+.login-button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: larger;
+  font-weight: bold;
+  color: #fff;
+  background-color:  #019eac;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #2980b9;
 }
